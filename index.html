@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="大府市の受験生向け高校ガイド。大府・共和から通える高校を中心に近隣地域の高校を比較。"><title>進学キャンパス</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f7f9;color:#152d37;font:16px/1.65 system-ui,sans-serif}a{color:#146652}button,input,select{font:inherit}button,select{cursor:pointer}button,select,input{border:1px solid #cad7d8;border-radius:10px;background:white;color:inherit;padding:9px 13px}button:hover{border-color:#16795e}button[aria-pressed=true],.primary{background:#166e56;border-color:#166e56;color:white}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #32a88a;outline-offset:2px}header{background:white;border-bottom:1px solid #e1e8e7}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:13px}.brand{font-weight:820;font-size:21px;letter-spacing:.02em;display:flex;align-items:center;gap:9px}.mark{background:#166e56;color:white;border-radius:10px;padding:3px 10px}.wrap{width:min(1152px,calc(100% - 36px));margin:auto}.hero{margin:25px auto 20px;background:#143c3c;color:white;border-radius:22px;padding:34px 36px;overflow:hidden}.hero h1{font-size:clamp(32px,5vw,60px);letter-spacing:-.04em;line-height:1.12;margin:8px 0 15px}.hero p{margin:0;color:#daf0e8}.year{color:#b2e1ce;font-size:14px;font-weight:750}.filters,.card,.compare{background:white;border:1px solid #dce6e5;border-radius:16px}.filters{padding:17px 20px}.tabs,.actions{display:flex;gap:8px;flex-wrap:wrap}.controls{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:10px;margin-top:12px}.controls label{font-size:14px;font-weight:680}.controls input,.controls select{width:100%;display:block;margin-top:4px}.toolbar{display:flex;justify-content:space-between;align-items:center;margin:18px 0 11px;gap:12px}.toolbar p{margin:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.card{padding:17px;display:flex;flex-direction:column;gap:9px}.card h2{font-size:23px;line-height:1.3;margin:0}.card p{margin:0}.meta,.small{color:#496365;font-size:14px}.metrics{background:#edf5f1;border-radius:10px;padding:8px 11px;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:14px}.metrics b{display:block;font-size:22px;line-height:1.4}.card .actions{margin-top:auto}.card button{font-size:14px}.uniform{font-size:14px;color:#3d5658}.compare{margin-top:16px;padding:16px;overflow:auto}.compare table{border-collapse:collapse;width:100%;min-width:460px}.compare th,.compare td{border-bottom:1px solid #e1e9e7;text-align:left;padding:10px;min-width:115px;vertical-align:top}.compare h2{margin:0 0 10px}.note{margin:20px 0;color:#496365;font-size:14px}dialog{max-width:min(640px,calc(100vw - 24px));max-height:88dvh;border:1px solid #dce6e5;border-radius:17px;padding:22px;color:inherit}dialog::backdrop{background:#102828aa}dialog h2{margin:8px 0}dialog{width:min(740px,calc(100vw - 24px))}.detail-section{padding:14px 0;border-top:1px solid #dce6e5}.detail-section h3,.detail-section p{margin:0 0 6px}.detail-nav{display:flex;gap:8px 16px;flex-wrap:wrap;margin:12px 0 18px;font-size:14px}.detail-section ul{margin:6px 0;padding-left:22px}.detail-section:focus{outline-color:#32a88a}.uniform-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:12px 0}.uniform-gallery figure{margin:0;border:1px solid #dce6e5;border-radius:12px;overflow:hidden;background:#fff}.uniform-gallery .photo-open{display:grid;place-items:center;aspect-ratio:4/3;background:#eff5f2;padding:8px}.uniform-gallery img{width:100%;height:100%;min-height:0;max-height:100%;object-fit:contain;margin:0}.uniform-gallery figcaption{padding:9px 12px;font-size:14px}.uniform-gallery figcaption a{display:block}.uniform-document{width:100%;height:340px;border:1px solid #dce6e5;border-radius:10px;margin:8px 0}dialog img{max-width:100%;max-height:350px;object-fit:contain;display:block;margin:12px auto}dialog .close{float:right}.check{white-space:nowrap}footer{padding-bottom:32px}
+@media(max-width:830px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.controls{grid-template-columns:1fr 1fr}.hero{padding:25px;gap:20px}}@media(max-width:570px){.uniform-gallery{grid-template-columns:1fr}.wrap{width:calc(100% - 24px)}.hero{grid-template-columns:1fr;margin-top:14px;padding:20px}.grid{grid-template-columns:1fr}.filters{padding:12px}.tabs button{padding:7px 9px}.toolbar{align-items:flex-start}.toolbar .actions{justify-content:flex-end}}@media print{header button,.hero,.filters,.toolbar,.card .actions,dialog{display:none!important}.grid{grid-template-columns:repeat(2,1fr)}.card{break-inside:avoid}.wrap{width:100%}}
+</style></head><body>
+<header><div class="wrap"><div class="brand"><span class="mark" aria-hidden="true">進</span>進学キャンパス</div><button id="onlySaved" aria-pressed="false">☆ お気に入り</button></div></header>
+<main class="wrap"><section class="hero"><div><div class="year">2027年春入試向け</div><h1>自分に合う<br>高校を見つけよう。</h1><p>大府・共和から通える高校を中心に、<br>名古屋方面も含めて、通学・入試・制服を比べる。</p></div></section>
+<section class="filters" aria-label="高校の絞り込み"><div class="tabs" id="areas"></div><div class="controls">
+<label>学校名やキーワード<input type="search" id="query" placeholder="例　半田東、看護、ブレザー"></label>
+<label>学校区分<select id="type"><option value="">すべて</option><option>公立</option><option>私立</option></select></label>
+<label>内申の目安<select id="grade"><option value="">指定なし</option><option value="25">25以下</option><option value="28">28以下</option><option value="30">30以下</option><option value="33">33以下</option><option value="36">36以下</option><option value="40">40以下</option></select></label>
+<label>並び順<select id="sort"><option value="">掲載順</option><option value="hensachi">偏差値が高い順</option><option value="grade">内申の目安が低い順</option></select></label></div></section>
+<div class="toolbar"><p id="count" aria-live="polite"></p><div class="actions"><label class="check"><input type="checkbox" id="photos"> 制服画像・資料あり</label><button id="compareButton">比較（0/3）</button></div></div>
+<section id="comparison" class="compare" aria-label="高校比較" hidden></section><p id="status" role="status" class="small"></p><section class="grid" id="results" aria-label="高校一覧"></section>
+<footer class="note">数値は学科・コース別の参考値です。公立は主に2026年春の合格者平均で、学校公式の合格最低点ではありません。出典が異なる数値には詳細画面で注記があります。制服写真は掲載元の公開画像を表示しています。<br><a href="https://www.pref.aichi.jp/soshiki/kotogakko/0000027366.html" target="_blank" rel="noopener">愛知県の公立高校入試情報</a></footer></main>
+<dialog id="detail" aria-labelledby="detailTitle"><button class="close" id="closeDetail">閉じる</button><div id="detailBody"></div></dialog>
+<script src="profiles.js"></script>
+<script src="outcomes.js"></script>
+<script src="uniforms.js"></script>
+<script>
+const average='https://mgk-komaki.com/2026/10/29/2025-aichi-high-rank/';
+const chita='https://www.chitamaru.jp/art/9965/index.html';
+const mikawa='https://an-english.com/wp/wp-content/uploads/2025/10/2026mikawa_ranking_kouritu.pdf';
+const a='大府・共和', b='半田東・亀崎', c='刈谷・知立', d='名古屋方面';
+const areaOptions=['',a,b,c,d];
+const rows=[
+['大府','普通科',a,51.7,31.8,'地元の普通科で、大学など幅広い進路を考えられる。','セーラー・学生服に加え、ショート丈ブレザー。','https://obu-h2.aichi-c.ed.jp/cms/info/suits.html'],
+['大府東','普通科',a,43.7,28,'個別指導ALPSと、地域・大学・企業と連携する探究 EAST time。','ブレザーにネクタイ・リボン。','https://obuhigashi-h.aichi-c.ed.jp/current2.html'],
+['半田東','普通科',b,44.9,28.6,'教育コースでは体験実習や卒業研究。一心祭では学年を越えて団を組む。JR亀崎駅から徒歩約20分。2027年春の募集は200人。','茶系ブレザー。夏の紺チェックやシャツの色も楽しめる。',chita,chita+'.img/%E5%8D%8A%E7%94%B0%E6%9D%B1%E9%AB%98%E6%A0%A1__550x.jpg'],
+['阿久比','普通科',b,46.2,29.5,'国際コミュニケーションコースで英語と国際交流に力を入れる。','学校公式に制服写真あり。','https://agui-h.aichi-c.ed.jp/info/seifuku.html','https://agui-h.aichi-c.ed.jp/images/seifuku/schooluniform.jpg'],
+['大府','生活文化科',a,41.1,27.7,'食物、服飾、保育や福祉を実習を交えて学ぶ。','セーラー・学生服・ブレザー。','https://obu-h2.aichi-c.ed.jp/cms/info/suits.html'],
+['桃陵','衛生看護科',a,48,29.5,'高校3年と専攻科2年の5年一貫で看護師を目指す。','スカート・スラックス。専攻科の制服も掲載。','https://toryo-h.com/school/uniform','https://toryo-h.com/wp/wp-content/uploads/2022/05/%E5%A5%B3%E5%AD%90%E5%86%AC%E6%9C%8D%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%88.jpg'],
+['桃陵','ヒューマンケア科',a,'40～44',28,'家庭科を軸に保育・福祉・介護を学ぶ。','桃陵高校の本科制服。','https://toryo-h.com/school/uniform',null,'https://inozyuku.com/aichi_zyuken/kouritsu/toryo-high-school','偏差値は進研ゼミのB判定値。内申は井ノ塾の推定。'],
+['東海南','普通科',a,52.5,32.5,'南加木屋駅から学校案内で徒歩約7分。大府普通科と比較しやすい学力帯。','青みのある緑を使った新ブレザー。夏のハーフパンツも。','https://www.chitamaru.jp/art/7805/index.html'],
+['横須賀','普通科',a,57.4,35.4,'東海市方面で大学進学を考える生徒の候補。','従来の濃紺セーラー・学生服に加え、2027年度からブレザーも選べる。','https://yokosuka-h.aichi-c.ed.jp/profile6.html'],
+['東浦','普通科',[a,b],35.5,22.4,'少人数制授業を取り入れる。大府方面・亀崎方面の双方から比較できる。','紺ブレザーに校章の刺しゅう。','https://higashiura-h.aichi-c.ed.jp/cms/page-45/page-70.html'],
+['鳴海','普通科',[a,d],46.2,28.1,'名古屋市緑区まで通学範囲を広げる場合の普通科候補。','ブレザー型。','https://narumi-h.aichi-c.ed.jp/cms/page-55/page-1404.html'],
+['豊明','普通科',a,40.8,25,'地域研究や地元の大学・施設でのキャリア教育。','杢グレーのブレザーと、緑・黄色を差し色にしたボトム。','https://kanko-gakuseifuku.co.jp/uniform_photo/data_2024/535_index_detail.php'],
+['東海樟風','総合情報科',a,40.8,27.1,'旧・東海商業。ICTや情報分野を中心に学ぶ。','リボンのあるデザイン。','https://www.itojyu.co.jp/school-uniform/school-list/hs-tokaishofu/'],
+['半田','普通科',b,61.8,40.7,'大学進学を視野に入れ、SSHで培ってきた理科の研究や探究活動に取り組む。','ブレザー型。ニットベストやセーターも。',chita],
+['半田商業','地域ビジネス科・ITビジネス科',b,38.8,24.8,'会計・マーケティングやICTを学ぶ。簿記などの資格取得にも力を入れる。','深緑のブレザーにチェック柄。',chita,null,average,'数値は全学科を合わせた集計。'],
+['半田工科','ロボット工学科・機械科・電気科',b,40.3,23.9,'ロボットや機械、電気の基礎を学び、2年次から専門分野に分かれる。','学校公式で現行制服を紹介。','https://handa-kogyo.jp/'],
+['半田工科','建築デザイン科・都市工学科',b,39,23.3,'製図やものづくりを通して建築や街づくりを学ぶ。','半田工科の指定制服。','https://handa-kogyo.jp/'],
+['半田農業','施設園芸科',b,30.9,22,'野菜・草花栽培や植物培養。学校には農業科学・食品科学・生活科学科もある。','2026年度から紺系ブレザー。マリーゴールド色を差し色に。',chita,chita+'.img/%E5%8D%8A%E7%94%B0%E8%BE%B2%E6%A5%AD%E9%AB%98%E6%A0%A1%E5%88%B6%E6%9C%8D__550x.jpg'],
+['武豊','普通科',b,37.3,19.7,'半田から南側に通学範囲を広げる場合に検討しやすい。','紺ブレザー。スカートとスラックスを選べる。',chita],
+['刈谷','普通科',c,65,43,'文武両道を掲げる進学校。大府市在住者は調整区域の特例で出願できる。','冬はブレザー。合服にカーディガン、夏にポロシャツ。','https://kariya-h.aichi-c.ed.jp/cms/',null,mikawa,'塾公表の2026年度入試用目安。'],
+['刈谷北','普通科',c,60,41,'大府市在住者は調整区域の特例で出願できる。','指定ポロシャツの着用も可。','https://kariyakita-h.aichi-c.ed.jp/cms/',null,mikawa,'塾公表の2026年度入試用目安。'],
+['刈谷北','国際探究科',c,60,40,'実践的な英語、海外交流、地域や企業と連携する探究。','指定ポロシャツの着用も可。','https://kariyakita-h.aichi-c.ed.jp/cms/',null,mikawa,'塾公表の2026年度入試用目安。'],
+['知立東','普通科',c,54,34,'総合的な探究を重視。大府市在住者は調整区域の特例で出願できる。','ブレザー型。','https://chiryu-higashi-h.aichi-c.ed.jp/',null,mikawa,'塾公表の2026年度入試用目安。'],
+['星城','普通科（仰星61・特進56・明徳45）',a,'45～61',null,'大学進学や就職など、進路に合わせて3コースから選ぶ。','ダークグレー×チェック。ベストやセーターも。','https://www.seijoh.ed.jp/uniform','https://www.seijoh.ed.jp/wp-content/images//uniform-img1.webp','https://www.minkou.jp/hischool/school/deviation/2426/','私立の模試集計。推薦時の内申目安は中学校へ。','私立'],
+['大同大学大同','普通科・工業科',[a,d],'42～46',null,'普通科に加え、機械・電子情報デザインを学べる工業科。','学校公式の特色ページに制服紹介。','https://www.daido-h.ed.jp/outline/feature.html',null,'https://www.minkou.jp/hischool/school/deviation/2510/','私立の模試集計。推薦時の内申目安は中学校へ。','私立'],
+['日本福祉大学付属','普通科',b,48,null,'文理・グローバル英語・総合進学・スポーツ。大学への付属推薦制度がある。','ヒロミチナカノのデザイン。リボン、ネクタイ、ベストなどを組み合わせられる。','https://www.n-fukushi.ac.jp/koukou/life/uniform/index.html',null,'https://www.minkou.jp/','私立の2026年度版偏差値。推薦時の内申目安は中学校へ。','私立'],
+['緑','普通科',d,50.7,29.6,'名古屋市緑区の市立高校。大府東・鳴海と合わせて候補を探せる。','ブレザー。カンコーの学校制服フォトライブラリーに写真あり。','https://kanko-gakuseifuku.co.jp/uniform_photo/data_2025/727_index_detail.php'],
+['名古屋南','普通科',d,58.2,37.4,'JR笠寺駅から徒歩約6分。学校公式で部活動や日々の学校生活を紹介。','2023年度入学生から新制服。学校公式に写真あり。','https://nagoyaminami-h.aichi-c.ed.jp/www2/life.html'],
+['桜台','普通科',d,63.4,40.3,'名古屋市南区の市立高校。普通科に加えてファッション文化科も設置。','2024年度からブレザー型。','https://nagoya.fureai-cloud.jp/_view/sakuradai-h/attach/get2/770/0#page=2'],
+['桜台','ファッション文化科',d,46.1,29.2,'ファッションデザイン、服飾手芸などを学ぶ専門学科。','普通科と同じ学校の制服案内を参照。','https://nagoya.fureai-cloud.jp/_view/sakuradai-h/attach/get2/770/0#page=2'],
+['名古屋工科','工業科（一括募集）',d,38,22.8,'本星崎駅から徒歩約2分。工業技術を実習で学ぶ。','学校の入学案内に制服資料あり。','https://nagoya-te.aichi-c.ed.jp/cms/',null,average,'2026年春の愛知全県模試追跡データ。工業系全学科の合格者集計。'],
+['名古屋大谷','普通科・商業科',d,'43～52',null,'瑞穂区の私立。大学進学・福祉医療・商業の分野から選べる。','募集要項・学校案内を参照。','https://nagoyaotani.owari.ac.jp/',null,'https://www.minkou.jp/hischool/school/deviation/3384/','私立の模試集計。コースによって偏差値の目安が異なります。','私立'],
+['名古屋たちばな','普通科・電気科・電子科・機械科',d,41,null,'東別院駅方面の私立。普通科に加え、電気・電子・機械の技術を学べる。','濃紺ブレザー。スカート2種類のほかスラックス、リボン・ネクタイも。','https://tachibana-hs.ed.jp/school-life',null,'https://www.minkou.jp/hischool/school/159/','私立の掲載偏差値。推薦の内申目安は中学校に確認してください。','私立']
+];
+const schools=rows.map(([name,course,areas,score,grade,life,uniform,link,photo,source=average,note='2026年春入試の愛知全県模試追跡データ。',type='公立'],id)=>{
+ const [extraPhoto,photoSource,uniformGuide]=uniformMedia[name]||[];
+ return {name,course,areas:[areas].flat(),score,grade,life,uniform,link,photo:photo||extraPhoto,photoSource,uniformGuide,source,note,type,id};
+});
+const toryoPhoto=schools.find(s=>s.name==='桃陵'&&s.photo).photo;
+for(const school of schools.filter(s=>s.name==='桃陵'))school.photo=toryoPhoto;
+const $=id=>document.getElementById(id);
+const favorites=new Set();
+try{JSON.parse(localStorage.getItem('chita-favorites')||'[]').forEach(id=>favorites.add(id));}catch{}
+const compared=new Set();
+let area='',saved=false;
+const link=(url,label)=>'<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+'</a>';
+const gradeText=s=>s.grade??'公表値未確認';
+const schoolLabel=s=>s.name+'高校';
+function uniformSection(s){
+ const currentMonth=Number(new Intl.DateTimeFormat('en-US',{month:'numeric',timeZone:'Asia/Tokyo'}).format(new Date()));
+ const photos=uniformPhotos(s,currentMonth);
+ const photoCards=photos.map(photo=>'<figure><a class="photo-open" href="'+photo.url+'" target="_blank" rel="noopener noreferrer" aria-label="'+photo.label+'の画像を拡大"><img loading="lazy" referrerpolicy="no-referrer" src="'+photo.url+'" alt="'+s.name+'高校の'+photo.label+'"></a><figcaption><strong>'+photo.label+'</strong>'+link(photo.source,'画像の掲載元')+'</figcaption></figure>').join('');
+ const pdf=uniformDocuments[s.name];
+ return '<p>'+s.uniform+'</p>'+(photoCards?'<div class="uniform-gallery">'+photoCards+'</div>':'')+
+  (pdf&&!photoCards?'<iframe loading="lazy" title="'+s.name+'高校の制服資料プレビュー" class="uniform-document" src="'+pdf+'"></iframe>':'')+
+  '<p>'+link(pdf||s.uniformGuide||s.link,pdf?'制服が載っている資料を開く':'制服・学校の案内')+'</p>';
+}
+function render(){
+ const query=$('query').value.normalize('NFKC').trim().toLowerCase();
+ const max=$('grade').value;
+ const list=schools.filter(s=>(!area||s.areas.includes(area))&&(!$('type').value||s.type===$('type').value)&&(!max||(s.grade!==null&&s.grade<=Number(max)))&&(!$('photos').checked||s.photo||uniformDocuments[s.name])&&(!saved||favorites.has(s.id))&&[s.name,s.name+'高校',s.course,s.life,s.uniform,...s.areas].join(' ').toLowerCase().includes(query));
+ const point=s=>Number(String(s.score).split('～').at(-1));
+ if($('sort').value==='hensachi')list.sort((x,y)=>point(y)-point(x));
+ if($('sort').value==='grade')list.sort((x,y)=>(x.grade??99)-(y.grade??99));
+ $('count').textContent=list.length+'件の学科・コース';
+ $('compareButton').textContent='比較（'+compared.size+'/3）';
+ $('areas').innerHTML=areaOptions.map((name,i)=>'<button data-area="'+i+'" aria-pressed="'+(area===name)+'">'+(name||'すべて')+'</button>').join('');
+ $('results').innerHTML=list.map(s=>'<article class="card"><div class="meta">'+s.type+' · '+s.areas.join('／')+'</div><h2>'+s.name+'高校</h2><p class="small">'+s.course+'</p><div class="metrics"><span>偏差値<b>'+s.score+'</b></span><span>内申の目安<b>'+gradeText(s)+'</b></span></div><p>'+s.life+'</p><p class="uniform">'+s.uniform+'</p><div class="actions"><button data-detail="'+s.id+'">'+(s.photo||uniformDocuments[s.name]?'詳細・制服':'詳細')+'</button><button aria-label="'+s.name+' '+s.course+'をお気に入り" aria-pressed="'+favorites.has(s.id)+'" data-save="'+s.id+'">'+(favorites.has(s.id)?'★':'☆')+'</button><button aria-label="'+s.name+' '+s.course+'を比較" aria-pressed="'+compared.has(s.id)+'" data-compare="'+s.id+'">比較</button></div></article>').join('')||'<p>条件に合う高校がありません。絞り込みを変えて探してみよう。</p>';
+ if(!$('comparison').hidden)renderCompare();
+}
+function comparisonValue(s,key){
+ const data=outcomeFor(s);
+ if(key==='progressRate'||key==='universityRate'){
+  if(!data)return '算出できる資料を未確認';
+  const rate=key==='progressRate'?outcomeRate(data):rateText(data.university,data.total);
+  return rate+'（'+(data.year||2026)+'年3月・'+(data.scope||s.course)+'）';
+ }
+ if(key==='benefit'||key==='watch')return fitFor(s)[key==='benefit'?0:1];
+ return s[key];
+}
+function outcomeSection(s){
+ const data=outcomeFor(s);
+ if(!data){
+  const [url,summary]=careerSources[s.name]||[];
+  return '<p>進学率を算出できる資料は未確認です。</p>'+(summary?'<p>'+summary+'</p><p>'+link(url,'進路情報の出典')+'</p>':'');
+ }
+ const counts='大学 '+data.university+'人 ／ 短大 '+data.junior+'人 ／ 専修・専門等 '+data.vocational+'人'+(data.otherStudy?' ／ 準大学・短大 '+data.otherStudy+'人':'');
+ return '<p class="small">'+(data.year||2026)+'年3月卒業・'+(data.scope||s.course)+'</p><div class="metrics"><span>進学率<b>'+outcomeRate(data)+'</b></span><span>大学進学率<b>'+rateText(data.university,data.total)+'</b></span></div><p>'+counts+'</p><p class="small">'+(data.publishedBreakdown?'公開進路表の人数合計':'卒業者数')+' '+data.total+'人を分母に計算。進学率には短大・専門等も含みます。大学進学率は大学に進んだ人数の割合です。</p><p>'+link(data.source,'進路データの出典')+'</p>';
+}
+function renderCompare(){
+ const selected=[...compared].map(id=>schools[id]);
+ const fields=[['学科・コース','course'],['偏差値','score'],['内申の目安','grade'],['学校生活','life'],['進学率','progressRate'],['大学進学率','universityRate'],['メリット','benefit'],['注意点','watch'],['制服','uniform'],['数値の出典','note']];
+ $('comparison').innerHTML='<h2>高校比較</h2>'+(selected.length?'<table><thead><tr><th scope="col">項目</th>'+selected.map(s=>'<th scope="col">'+s.name+'高校</th>').join('')+'</tr></thead><tbody>'+fields.map(([title,key])=>'<tr><th scope="row">'+title+'</th>'+selected.map(s=>'<td>'+(comparisonValue(s,key)??'公表値未確認')+'</td>').join('')+'</tr>').join('')+'</tbody></table>':'<p>高校カードの「比較」を押すと、最大3件を並べて見られます。</p>');
+}
+function openDetail(s){
+ const profile=profiles[s.name]||{};
+ const courseValue=value=>typeof value==='string'?value:value?.[s.course];
+ const map='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('愛知県 '+schoolLabel(s));
+ const related=schools.filter(item=>item.name===s.name&&item.id!==s.id);
+ const sections=[
+  ['study','学び・学校生活','<p>'+s.life+'</p>'+(courseValue(profile.study)?'<p>'+courseValue(profile.study)+'</p>':'')+(related.length?'<p>同じ高校の学科・コース</p><div class="actions">'+related.map(item=>'<button data-detail="'+item.id+'">'+item.course+'</button>').join('')+'</div>':'')],
+  ['outcomes','卒業後の進路',outcomeSection(s)],
+  ['fit','メリット・注意点','<p><strong>メリット</strong>　'+fitFor(s)[0]+'</p><p><strong>注意点</strong>　'+fitFor(s)[1]+'</p>'],
+  ['access','通学・アクセス',(profile.access?'<p>'+profile.access+'</p>':'')+'<p>'+link(map,'地図で自宅からの経路を調べる')+(profile.route?' ／ '+link(profile.route,'アクセスの出典'):'')+'</p>'],
+  ['exam','2027年春入試',(courseValue(profile.exam)?'<p>'+courseValue(profile.exam)+'</p>':'')+(admissionDetails[s.name]?'<p>'+admissionDetails[s.name][0]+' '+link(admissionDetails[s.name][1],'募集学科・コースの出典')+'</p>':'')+'<p>'+s.note+' '+link(s.source,'偏差値・内申の出典')+'</p>'+(s.type==='公立'?'<p>評定得点は中3の9教科の内申合計（45点満点）×2。一般選抜の当日点も合わせて使います。</p><p>'+link(admissionGuide,'愛知県の入試要項')+'</p>':'')],
+  ['uniform','制服',uniformSection(s)]
+ ];
+ const references=[...(profile.site?[['学校公式サイト',profile.site]]:[]),...(profile.links||[])];
+ if(references.length)sections.push(['sources','もっと知りたいとき','<ul>'+references.map(([label,url])=>'<li>'+link(url,label)+'</li>').join('')+'</ul>']);
+ $('detailBody').innerHTML='<p class="meta">'+s.type+' · '+s.areas.join('／')+'</p><h2 id="detailTitle">'+schoolLabel(s)+'</h2><p>'+s.course+'</p><div class="metrics"><span>偏差値<b>'+s.score+'</b></span><span>内申の目安<b>'+gradeText(s)+'</b></span></div><nav class="detail-nav" aria-label="学校詳細の目次">'+sections.map(([id,title])=>'<a href="#detail-'+id+'">'+title+'</a>').join('')+'</nav>'+sections.map(([id,title,content])=>'<section class="detail-section" id="detail-'+id+'" tabindex="-1"><h3>'+title+'</h3>'+content+'</section>').join('');
+ if(!$('detail').open)$('detail').showModal();
+ $('detail').scrollTop=0;
+}
+$('detail').addEventListener('click',event=>{
+ const anchor=event.target.closest('.detail-nav a');
+ if(!anchor)return;
+ event.preventDefault();
+ const section=$(anchor.hash.slice(1));
+ section.focus({preventScroll:true});
+ section.scrollIntoView({block:'nearest'});
+});
+document.addEventListener('error',event=>{if(event.target.tagName==='IMG'){const replacement=document.createElement('span');replacement.textContent='掲載元で写真を見る';event.target.replaceWith(replacement);}},true);
+document.addEventListener('click',event=>{
+ const button=event.target.closest('[data-area],[data-detail],[data-save],[data-compare]');
+ if(!button)return;
+ const {area:areaId,detail,save,compare}=button.dataset;
+ if(areaId!==undefined){area=areaOptions[Number(areaId)];render();$('areas').querySelector('[aria-pressed=true]').focus();}
+ if(detail!==undefined){event.preventDefault();openDetail(schools[detail]);}
+ if(save!==undefined){const id=Number(save);favorites.has(id)?favorites.delete(id):favorites.add(id);try{localStorage.setItem('chita-favorites',JSON.stringify([...favorites]));}catch{}render();document.querySelector('[data-save="'+id+'"]')?.focus();}
+ if(compare!==undefined){const id=Number(compare);if(compared.has(id))compared.delete(id);else if(compared.size<3)compared.add(id);else{$('status').textContent='比較は3件までです。選択中の高校を1件外してください。';return;}$('status').textContent='';render();document.querySelector('[data-compare="'+id+'"]')?.focus();}
+});
+$('onlySaved').onclick=()=>{saved=!saved;$('onlySaved').setAttribute('aria-pressed',saved);render();};
+$('compareButton').onclick=()=>{$('comparison').hidden=!$('comparison').hidden;if(!$('comparison').hidden)renderCompare();};
+$('closeDetail').onclick=()=>$('detail').close();
+$('query').oninput=render;
+for(const id of ['type','grade','sort','photos'])$(id).onchange=render;
+render();
+</script></body></html>
